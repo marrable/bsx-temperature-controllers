@@ -14,7 +14,7 @@ caproto = "^1.1.0"
 bluesky = "^1.11.0"
 pyserial = "^3.5"
 pylinkam = {git = "https://github.com/swinburne-sensing/pylinkam.git"}
-ophyd = "1.9.0"
+ophyd = {git = "https://github.com/marrable/ophyd.git", branch = "describe-method-patch"}
 ipykernel = "^6.25.2"
 
 
