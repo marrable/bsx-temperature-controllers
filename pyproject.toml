@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "temperature-controllers"
+version = "0.1.0"
+description = "Modules for running temperature controller IOCs"
+authors = ["Lester Barnsley <lester.barnsley@ansto.gov.au>"]
+readme = "README.md"
+packages = [
+    {include = "bsx_temperature_controllers"},
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+caproto = "^1.1.0"
+bluesky = "^1.11.0"
+pyserial = "^3.5"
+pylinkam = {git = "https://github.com/swinburne-sensing/pylinkam.git"}
+ophyd = "^1.9.0"
+ipykernel = "^6.25.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
